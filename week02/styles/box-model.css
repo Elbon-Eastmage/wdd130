@@ -1,15 +1,33 @@
+body {
+    background-color: bisque;
+}
+
 .callout {
-	
+    max-width: 23.5%;
+    margin: 0.1em;
+    border: 0.75em solid white;
+    padding: 1.25em;
+    background-color: hsl(220, 50%, 30%);
+    color: white;
 }
 
 .callout img {
-	
+    float: right;
+    margin: 0 0 0.7em 1em;
+    border: 0.3em solid rgb(175, 175, 175);
+    width: 110px;
+    height: auto;
 }
 
 blockquote {
-	
+    font-size: 1.2em;
+    margin: 0;
 }
 
 cite {
-	
+    display: block;
+    border-top: 0.1em dotted white;
+    padding-top: 0.3em;
+    text-align: right;
+    font-size: 0.9em;
 }
