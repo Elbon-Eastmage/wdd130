@@ -1,0 +1,71 @@
+:root {
+    --main-color: darkblue;
+    --secondary-color: orange;
+    --content-color: black;
+    --title-font: "Liberation Serif", Garamond, serif;
+    --paragraph-font: Verdana, "Century Gothic", sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--paragraph-font);
+    color: var(--content-color);
+}
+
+header, main, footer {
+    width: 840px;
+    margin: 0 auto;
+}
+
+h1, h2 {
+    font-family: var(--title-font);
+    color: var(--main-color);
+    text-align: center;
+    background-color: var(--secondary-color);
+}
+
+h1 {
+    position: absolute;
+    width: 100%;
+    top: 25px;
+    padding: 8px;
+    opacity: 80%;
+}
+
+nav, p, section, article {
+    margin: 16px;
+    padding: 8px;
+}
+
+article {
+    position: absolute;
+    top: 70px;
+    background-color: rgb(0 100 200 / 0.5);
+    color: white;
+}
+
+.socialmedia a {
+    text-decoration: none;
+}
+
+.hero {
+    position: relative;
+}
+
+.hero img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.hero article img {
+    float: right;
+    height: 125px;
+    width: auto;
+    border: 1px solid var(--content-color);
+}
