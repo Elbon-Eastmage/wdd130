@@ -1,5 +1,4 @@
 :root {
-    --heading-color: darkblue;
     --image-height: auto;
     --border-thickness: 1px;
     --subtle-color: black;
@@ -11,34 +10,52 @@
     box-sizing: border-box;
 }
 
+header, footer, .grid {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
 nav {
-    background-color: var(--heading-color);
-    padding: 10px;
+    display: flex;
+    background-color: darkblue;
+    padding: 1rem;
+    justify-content: space-evenly;
+    align-items: center;
 }
 
 nav a {
-    color: white;
     display: block;
-    padding: 20px;
-}
-
-h1 {
-    color: var(--heading-color);
     padding: 0.5rem;
+    color: white;
+    font-size: 1.2rem;
+    font-weight: 700;
+    text-decoration: none;
 }
 
 main {
-    max-width: 900px;
+    max-width: 50rem;
+    margin: 1rem 0;
+    grid-column: 2/3;
+}
+
+h1 {
+    color: darkblue;
+    padding: 0.5rem;
+    border-bottom: 1px solid #222;
 }
 
 main img {
-    width: 150px;
+    width: 19rem;
     height: var(--image-height);
     border: var(--border-thickness) solid var(--subtle-color);
     padding: 2px;
     box-shadow: 0 0 30px gray;
     float: right;
-    margin: 0 0 1rem 1rem;
+    margin: 1rem 0 1rem 1rem;
+}
+
+ul {
+    list-style: none;
 }
 
 p {
@@ -47,31 +64,35 @@ p {
 }
 
 aside {
-    width: 20%;
-    text-align: center;
+    max-width: 30rem;
     position: relative;
+    grid-row: 1/2;
+    grid-column: 1/2;
 }
 
 aside img {
-    width: 200px;
+    width: 100%;
     height: var(--image-height);
 }
 
 aside h2 {
     position: absolute;
-    top: 25px;
-    left: 170px;
+    top: 2rem;
+    left: 13.5rem;
 }
 
 footer {
-    margin-top: 5rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    padding: 0.1rem 0;
     border-top: var(--border-thickness) dotted var(--subtle-color);
     text-align: center;
+    background-color: #3e3e3e;
+    color: white;
 }
 
 /* Class Selectors */
 .box {
-    margin: 1rem;
     border: 1px solid rgb(0 0 0 / 0.1);
     padding: 1rem;
     background-color: #eee;
@@ -80,4 +101,10 @@ footer {
 
 .indent {
     padding-left: 2rem;
+}
+
+.grid {
+    display: grid;
+    align-items: center;
+    gap: 2rem;
 }
