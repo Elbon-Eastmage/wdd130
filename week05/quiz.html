@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Quiz</title>
+    <link rel="stylesheet" href="styles/quiz.css">
+</head>
+<body>
+    <header>
+        <h1>Web Quiz</h1>
+    </header>
+    <form>
+        <div class="question">
+            <label for="q1">What does HTML stand for?</label>
+            <input type="text" id="q1" name="q1">
+        </div>
+        <div class="question">
+            <label for="q2">Why is it better to use CSS for a website's appearance?</label>
+            <textarea id="q2" name="q2" rows="5"></textarea>
+        </div>
+        <div class="question">
+            <label for="q3">Which web browser is no longer supported?</label>
+            <select id="q3" name="q3">
+                <option value="" selected disabled></option>
+                <option value="brave">Brave</option>
+                <option value="edge">Microsoft Edge</option>
+                <option value="chrome">Google Chrome</option>
+                <option value="explorer">Internet Explorer</option>
+                <option value="firefox">Firefox</option>
+                <option value="all">They all are supported</option>
+            </select>
+        </div>
+        <div class="question">
+            <label for="q4">How many columns should a web form have?</label>
+            <input type="number" id="q4" name="q4">
+        </div>
+        <button type="submit">Submit Quiz</button>
+    </form>
+</body>
+</html>

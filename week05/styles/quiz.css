@@ -1,0 +1,52 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    margin: 1rem 0;
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+form {
+    display: grid;
+    width: 32%;
+    margin: 0 auto;
+    padding: 2rem;
+    border: 2px solid darkblue;
+    border-radius: 2rem;
+    background-color: cornsilk;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+label {
+    display: block;
+    margin: 1rem 0 0.25rem 0;
+}
+
+input, textarea, select {
+    width: 100%;
+    padding: 0.2rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 0.9rem;
+}
+
+input, select {
+    height: 2rem;
+}
+
+button {
+    height: 3rem;
+    margin-top: 1.5rem;
+    border-radius: 1rem;
+    border: 2px solid darkblue;
+    background-color: skyblue;
+    font-size: 1rem;
+}
+
+button:hover {
+    background-color: blueviolet;
+    color: white;
+}
