@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta
+      name="description"
+      content="Provides ways for users to contact the company.">
+    <meta name="author" content="Elbert John Eastmond">
+    <title>Contact Exciting Expeditions</title>
+    <link rel="stylesheet" href="styles/rafting.css">
+</head>
+<body>
+    <header>
+        <img src="images/logo.webp" alt="Exciting Expeditions logo">
+        <nav class="map">
+            <a href="index.html">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="trips.html">Trips</a>
+            <a href="contact.html">Contact Us</a>
+        </nav>
+    </header>
+    <main>
+        <h1>Exciting Expeditions</h1>
+        <p class="contact-information">
+            123 River St S<br>
+            Santa Cruz, CA 95060<br>
+            +1 999-999-9999<br>
+            info@excitingexpeditions.com
+        </p>
+        <div class="contact-center">
+            <iframe
+              class="gmap"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6374.893924563569!2d-122.0243174!3d36.975263000000005!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808e4026633df9e3%3A0x7948909fb68b206c!2s123%20River%20St%20S%2C%20Santa%20Cruz%2C%20CA%2095060!5e0!3m2!1sen!2sus!4v1770494875576!5m2!1sen!2sus"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+            <form class="user-data-form">
+                <div class="two-column-grid">
+                    <label for="user-name">Name</label>
+                    <input
+                      type="text"
+                      id="user-name"
+                      name="user-name"
+                      placeholder="John Doe"
+                      required>
+                    <label for="user-email">Email</label>
+                    <input
+                      type="email"
+                      id="user-email"
+                      name="user-email"
+                      placeholder="your-name@email-site.com"
+                      required>
+                    <span>Message Purpose</span>
+                    <div>
+                        <div>
+                            <input type="radio" id="general" name="message-type" value="general">
+                            <label for="general">General Inquiry</label>
+                        </div>
+                        <div>
+                            <input
+                              type="radio"
+                              id="reservation"
+                              name="message-type"
+                              value="reservation">
+                            <label for="reservation">Reservation Question</label>
+                        </div>
+                        <div>
+                            <input type="radio" id="website" name="message-type" value="website">
+                            <label for="website">Website Suggestion</label>
+                        </div>
+                    </div>
+                </div>
+                <label>
+                    Message
+                    <textarea
+                      class="text-message"
+                      name="message"
+                      rows="3"
+                      placeholder="Type here"></textarea>
+                </label>
+                <input type="checkbox" id="subscribe" name="subscribe">
+                <label for="subscribe">Please subscribe me to the monthly newsletter</label>
+                <button class="prime-button" type="submit">Send Message</button>
+            </form>
+        </div>
+        <section class="plate">
+            <h2>We Are Here to Serve You</h2>
+            <div class="adventures">
+                <figure class="portrait">
+                    <img src="images/john.webp" alt="John Eastmond">
+                    <figcaption>John Eastmond: CEO</figcaption>
+                </figure>
+                <figure class="portrait">
+                    <img src="images/ajelan-probert.jpg" alt="Ajelan Probert">
+                    <figcaption>Ajelan Probert: Outdoor Expert</figcaption>
+                </figure>
+                <figure class="portrait">
+                    <img src="images/adeline-talmage.webp" alt="Adeline Talmage">
+                    <figcaption>Adeline Talmage: Coordinator</figcaption>
+                </figure>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2026 Exciting Expeditions | Elbert John Eastmond</p>
+        <nav class="socialmedia">
+            <a href="https://www.youtube.com" target="_blank">
+                <img src="images/youtube.png" alt="YouTube Logo">
+            </a>
+            <a href="https://twitter.com" target="_blank">
+                <img src="images/twitter.png" alt="Twitter Logo">
+            </a>
+            <a href="https://www.facebook.com" target="_blank">
+                <img src="images/facebook.png" alt="Facebook Logo">
+            </a>
+        </nav>
+    </footer>
+</body>
+</html>

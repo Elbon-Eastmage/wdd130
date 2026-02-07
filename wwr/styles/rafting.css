@@ -1,6 +1,7 @@
 :root {
     --main-color: darkblue;
     --secondary-color: orange;
+    --tertiary-color: aliceblue;
     --content-color: black;
     --title-font: "Liberation Serif", Garamond, serif;
     --paragraph-font: Verdana, "Century Gothic", sans-serif;
@@ -20,7 +21,7 @@ body {
 header {
     display: grid;
     margin: 1rem auto;
-    background-color: aliceblue;
+    background-color: var(--tertiary-color);
     border: 3px solid var(--main-color);
     grid-template-columns: 1fr 2fr;
     align-items: center;
@@ -51,11 +52,30 @@ main, footer {
     margin: 0 auto;
 }
 
+input[type="radio"] {
+    margin: 0.5rem 0;
+}
+
+input[type="checkbox"] {
+    margin: 1rem 0;
+}
+
+input, textarea {
+    padding: 0.2rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 0.9rem;
+}
+
+textarea {
+    display: block;
+    margin-top: 0.1rem;
+}
+
 footer {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    background-color: aliceblue;
+    background-color: var(--tertiary-color);
 }
 
 main h2 {
@@ -124,6 +144,64 @@ main h2 {
 
 .adventures figure img {
     width: 90%;
+}
+
+.portrait {
+    width: 8rem;
+    height: auto;
+}
+
+.contact-information {
+    text-align: center;
+}
+
+.contact-center {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+    margin-bottom: 1.5rem;
+}
+
+.gmap {
+    width: 25rem;
+    height: 21rem;
+}
+
+.user-data-form {
+    margin: 0 2rem;
+}
+
+.two-column-grid {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+.text-message {
+    width: 100%;
+}
+
+.prime-button {
+    width: 100%;
+    height: 2rem;
+    font-size: 1rem;
+    background-color: var(--secondary-color);
+    color: var(--main-color);
+}
+
+.prime-button:hover {
+    background-color: var(--main-color);
+    color: white;
+}
+
+.plate {
+    padding-top: 0;
+    border: 2px solid var(--content-color);
+    background-color: var(--main-color);
+    color: white;
 }
 
 .socialmedia a {
